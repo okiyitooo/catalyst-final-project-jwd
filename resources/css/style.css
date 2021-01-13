@@ -1,0 +1,19 @@
+/*  Final Project Task Manager
+ *  Francisco, Kali, Hiruy, Kanaetochi
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Start Adding Selectors here */
