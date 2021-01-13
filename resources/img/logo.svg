@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="355"
-   height="355"
-   viewBox="0 0 355 355.00001"
+   width="600"
+   height="150"
+   viewBox="0 0 600 150"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
@@ -25,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="191.39637"
-     inkscape:cy="190.17974"
+     inkscape:zoom="1.4"
+     inkscape:cx="339.47318"
+     inkscape:cy="80.596003"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
      inkscape:window-height="1057"
-     inkscape:window-x="-8"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -53,28 +53,52 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-767.51965)">
+     transform="translate(0,-972.51965)">
     <path
        inkscape:connector-curvature="0"
        id="path3863"
-       d="m 216.80554,1055.4245 c -6.7176,-6.323 -6.63688,-3.4836 -1.34575,-47.3129 2.59284,-21.4783 -1.03278,-27.5608 -22.55173,-37.8329 -9.50355,-4.53649 -18.65685,-8.2482 -20.34072,-8.2482 -1.68384,0 -7.8379,5.48222 -13.67571,12.18269 -23.40804,26.86721 -48.47418,30.08341 -89.735671,11.51394 -32.302887,-14.53771 -39.147347,-24.29795 -28.156614,-40.15137 2.534886,-3.6563 3.456415,-7.07815 2.047847,-7.60403 -1.408497,-0.52588 -9.318814,-4.32777 -17.578429,-8.44862 -17.9048507,-8.93305 -19.6941797,-14.61408 -8.981259,-28.51528 26.532447,-34.42879 37.498588,-46.7532 42.688813,-47.97625 3.236198,-0.76259 11.413124,0.48304 18.170957,2.7681 l 12.287045,4.15466 -14.105046,-1.60249 -14.105011,-1.60248 -20.708205,26.28008 c -11.389499,14.45407 -20.708171,28.06599 -20.708171,30.24872 0,3.59424 11.137353,9.88991 42.321941,23.92345 6.006979,2.70325 19.313097,8.75583 29.569119,13.45019 17.189544,7.86794 19.234634,8.22837 26.159454,4.61047 11.22864,-5.86644 53.47859,-63.26846 50.3419,-68.39601 -0.91093,-1.48906 -6.71627,-2.02171 -12.90083,-1.18364 -9.48856,1.28582 -13.85673,4.35082 -27.9699,19.62553 -14.53517,15.73148 -17.99592,18.10174 -26.42943,18.10174 -10.861157,0 -21.022391,-9.90841 -21.022391,-20.49928 0,-7.48986 41.466671,-50.40979 53.838661,-55.72541 12.63577,-5.429 35.54241,-4.61165 49.44926,1.76447 6.49978,2.98007 27.49092,14.74585 46.64698,26.14619 21.26154,12.65339 37.84559,20.72794 42.57251,20.72794 5.82453,0 12.29904,-4.44348 26.12699,-17.931 20.58041,-20.07357 30.44687,-22.96023 40.65184,-11.89358 10.2241,11.0874 7.41992,20.13373 -12.86325,41.49824 -27.2164,28.66731 -46.81536,35.40207 -74.40472,25.5676 -12.41981,-4.42716 -40.95672,-5.68013 -40.95672,-1.79825 0,1.28676 4.95802,4.59845 11.0178,7.3592 14.20316,6.47078 28.72108,22.79557 32.94768,37.04808 2.63898,8.89912 2.60071,17.08845 -0.18435,39.4817 -3.67288,29.5301 -7.80422,41.5908 -15.23362,44.4711 -8.3292,3.2291 -16.59938,1.7102 -22.88105,-4.2024 z m 3.60704,-204.92294 c -13.02354,-5.72777 -21.59734,-19.81146 -21.36652,-35.09762 0.32753,-21.68493 16.50766,-38.1693 37.48548,-38.19016 21.7799,-0.0215 37.37896,15.94732 37.39786,38.28465 0.0215,28.77983 -27.19181,46.5808 -53.51682,35.00313 z"
-       style="fill:#053160;stroke-width:2.74449444"
+       d="m 91.623044,1111.7895 c -2.677207,-2.9843 -2.645036,-1.6443 -0.53633,-22.3304 1.033342,-10.1371 -0.411598,-13.0078 -8.987684,-17.856 -3.787507,-2.1409 -7.435429,-3.8928 -8.106511,-3.8928 -0.671073,0 -3.123688,2.5875 -5.450268,5.7498 -9.328951,12.6806 -19.318717,14.1984 -35.762916,5.4343 -12.873872,-6.8614 -15.601637,-11.468 -11.221432,-18.9503 1.010244,-1.7256 1.377507,-3.3406 0.816142,-3.5888 -0.561337,-0.2482 -3.713885,-2.0426 -7.005641,-3.9875 -7.1357323,-4.2162 -7.8488449,-6.8974 -3.579357,-13.4583 10.57414,-16.2494 14.944546,-22.0661 17.013039,-22.6434 1.289742,-0.3599 4.548543,0.2281 7.241784,1.3065 l 4.896833,1.9609 -5.621372,-0.7564 -5.621357,-0.7563 -8.252971,12.4034 c -4.539129,6.822 -8.252957,13.2463 -8.252957,14.2765 0,1.6964 4.438638,4.6677 16.866828,11.2911 2.393999,1.2759 7.696969,4.1325 11.784365,6.3481 6.850657,3.7135 7.665699,3.8836 10.425491,2.176 4.475019,-2.7688 21.313158,-29.8607 20.063071,-32.2808 -0.363037,-0.7028 -2.676675,-0.9542 -5.141445,-0.5586 -3.781539,0.6068 -5.522412,2.0535 -11.147021,9.2626 -5.792793,7.4248 -7.172027,8.5435 -10.533087,8.5435 -4.328564,0 -8.378185,-4.6765 -8.378185,-9.675 0,-3.535 16.525971,-23.7919 21.456657,-26.3008 5.035817,-2.5622 14.16494,-2.1765 19.707326,0.8329 2.590396,1.4065 10.956127,6.9596 18.59051,12.3401 8.473494,5.9721 15.082834,9.783 16.966684,9.783 2.32129,0 4.90161,-2.0972 10.41255,-8.4629 8.20205,-9.4741 12.13418,-10.8365 16.20124,-5.6133 4.07467,5.2328 2.9571,9.5024 -5.12647,19.5858 -10.84673,13.5301 -18.65762,16.7087 -29.65298,12.0672 -4.94974,-2.0895 -16.322738,-2.6809 -16.322738,-0.8488 0,0.6073 1.975953,2.1703 4.390995,3.4733 5.660472,3.054 11.446383,10.7588 13.130843,17.4855 1.05172,4.2002 1.03647,8.0653 -0.0735,18.6342 -1.46377,13.9373 -3.11026,19.6296 -6.07114,20.989 -3.319491,1.524 -6.615457,0.8072 -9.118931,-1.9833 z m 1.437537,-96.7175 c -5.190354,-2.7032 -8.607326,-9.3503 -8.515333,-16.56493 0.130532,-10.23457 6.5789,-18.01468 14.939324,-18.02462 8.680078,-0.012 14.896868,7.52665 14.904398,18.06918 0.009,13.58317 -10.83692,21.98477 -21.328389,16.52037 z"
+       style="fill:#ececec;stroke-width:1.19029105"
        sodipodi:nodetypes="cccscscccsccccccscsscscssscssssssscsccccscccs" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.17369461px;line-height:1.25;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#053160;fill-opacity:1;stroke:none;stroke-width:2.63426208"
-       x="176.36662"
-       y="1112.2377"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.43742371px;line-height:1.25;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:3.02338409;"
+       x="206.06381"
+       y="1047.2145"
        id="text3872"
        transform="scale(1.0000974,0.9999026)"><tspan
          sodipodi:role="line"
          id="tspan3870"
-         x="176.36662"
-         y="1112.2377"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:49.17369461px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#053160;fill-opacity:1;stroke-width:2.63426208"><tspan
-   style="fill:#ff0000"
-   id="tspan3874">FUN</tspan>-TASK-<tspan
-   style="fill:#ff0000"
-   id="tspan3876">TIC</tspan></tspan></text>
+         x="206.06381"
+         y="1047.2145"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.43742371px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ececec;fill-opacity:1;stroke-width:3.02338409;"><tspan
+           style="fill:#ececec;stroke-width:3.02338409;fill-opacity:1;"
+           id="tspan3874">FUN</tspan></tspan></text>
+    <text
+       transform="scale(1.0000974,0.9999026)"
+       id="text3864"
+       y="1085.8867"
+       x="388.39728"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:111.31639099px;line-height:1.25;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:5.96328068;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:111.31639099px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ffff00;fill-opacity:1;stroke-width:5.96328068;"
+         y="1085.8867"
+         x="388.39728"
+         id="tspan3862"
+         sodipodi:role="line">TASK</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.43742371px;line-height:1.25;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:3.02338409;"
+       x="553.62384"
+       y="1086.1747"
+       id="text3873"
+       transform="scale(1.0000974,0.9999026)"><tspan
+         sodipodi:role="line"
+         id="tspan3871"
+         x="553.62384"
+         y="1086.1747"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:56.43742371px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ececec;fill-opacity:1;stroke-width:3.02338409;"><tspan
+           style="fill:#ececec;stroke-width:3.02338409;fill-opacity:1;"
+           id="tspan3868">TIC</tspan></tspan></text>
   </g>
 </svg>
