@@ -34,7 +34,7 @@ body {
 /* Banner Section */
 
 .banner {
-    background-image: url(/resources/img/img_banner.png);
+    background-image: url(../img/img_banner.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
