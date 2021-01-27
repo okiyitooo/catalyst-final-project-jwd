@@ -92,3 +92,5 @@ class TaskManager {
         this._currentId--
     }
 }
+
+module.exports = TaskManager
