@@ -1,7 +1,7 @@
 {
   "name": "catalyst-final-project-jwd",
   "version": "1.0.0",
-  "description": "My personal version of the project in case things go wrong, The project is about handling tasks"
+  "description": "My personal version of the project in case things go wrong, The project is about handling tasks",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
