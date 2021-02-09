@@ -54,13 +54,13 @@ describe('TaskManager',() => {
             assert.deepEqual(expected,result)
         })
     })
-    describe('.render',() => {
-        it('should render a taskmanagers tasks as a task list in html', () => {
-            //setup
-            //exercise
-            //verify
-        })
-    })
+//    describe('.render',() => {
+//        it('should render a taskmanagers tasks as a task list in html' () => {
+//            //setup
+//            //exercise
+//            //verify
+//        })
+//    })
 //    describe('.save',() => {
 //        it('should save a tasklist to the local storage',() => {
 //            //setup

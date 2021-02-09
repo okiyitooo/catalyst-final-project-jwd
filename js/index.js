@@ -30,7 +30,9 @@ const validFormFieldInput = () => {
         setTimeout(()=>{$('#due-alert').hide()},2000)
         return false;
     }
-    taskManager.addTask(name,description,assignedTo,dueDate)
+    taskManager.addTask(name,description,assignedTo,dueDate,$('.create-button').html()=="UPDATE"?"UPDATED":"TODO")
+    $('.create-button').css('background-color',"#ffc107")
+    $(".create-button").html("Create")
     taskManager.save()
     taskManager.render()
     newTaskNameInput.value = ""
@@ -40,9 +42,9 @@ const validFormFieldInput = () => {
 }
 const tasksList = document.querySelector('#tasks');
 tasksList.addEventListener('click',(event) => {
-        const parentTask = event.target.parentElement.parentElement.parentElement
-        const taskId = parentTask.dataset.taskId
-        const task = taskManager.getTaskById(taskId)
+        let parentTask = event.target.parentElement.parentElement.parentElement
+        let taskId = parentTask.dataset.taskId
+        let task = taskManager.getTaskById(taskId)
     if (event.target.classList.contains('done-button')){
         task.status = "DONE"
         taskManager.save()
@@ -54,5 +56,29 @@ tasksList.addEventListener('click',(event) => {
         taskManager.save()
         taskManager.render()
         return false;
+    }
+    if (event.target.classList.contains('edit')){
+        //You can't update the element unless you are done updating something else
+        if ($(".create-button").html() == "Create") {
+        parentTask = event.target.parentElement.parentElement
+        taskId = parentTask.dataset.taskId
+        task = taskManager.getTaskById(taskId)
+
+        console.log(parentTask)
+        $('#task-name').val(task.name)
+        $('#description').val(task.description)
+        $('#assigned-to').val(task.assignedTo)
+        $('#due-date').val(task.dueDate)
+        $(".create-button").html("UPDATE")
+        $(".create-button").css('background-color','skyblue')
+//        task.status = "UPDATED"
+        console.log(task)
+        taskManager.deleteTask(taskId)
+        taskManager.save()
+        taskManager.render()
+        } else {
+            $('#update-alert').show()
+            setTimeout(()=>{$('#update-alert').hide()},3000)
+        }
     }
 })

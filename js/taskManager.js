@@ -1,6 +1,6 @@
 const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
-    const display = status == "TODO" ? "" : "d-none";   
-    const color = status == "TODO" ? "badge-warning" : "badge-success"
+    const display = status == "TODO" || status == "UPDATED" ? "" : "d-none";   
+    const color = status == "TODO" ? "badge-warning": status == "UPDATED" ? "badge-primary" : "badge-success"
     const html = `<li class="list-group-item">
                   <div class="task" data-task-id=${id}>
                     <div class="task-top">
@@ -9,7 +9,7 @@ const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
                       <div><span class="badge badge-pill ${color} task-status">${status}</span></div>
                     </div>
                     <div class="task-desc">
-                      <p>${description}</p>
+                      <p class="edit">${description}</p>
                     </div>
                     <div class="task-bottom">
                       <div><span class="task-assign">Assigned to: ${assignedTo}</span>
