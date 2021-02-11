@@ -13,21 +13,25 @@ const validFormFieldInput = () => {
     if (name===""){
         $('#name-alert').show()
         setTimeout(()=>{$('#name-alert').hide()},2000)
+        $('#task-name').focus()
         return false;
     }
     if (description==="") {
         $('#descrip-alert').show()
         setTimeout(()=>{$('#descrip-alert').hide()},2000)
+        $('#description').focus()
         return false;
     }
     if (assignedTo===""){
         $('#assigned-alert').show()
         setTimeout(()=>{$('#assigned-alert').hide()},2000)
+        $('#assigned-to').focus()
         return false;
     }
     if (dueDate === ""){
         $('#due-alert').show()
         setTimeout(()=>{$('#due-alert').hide()},2000)
+        $('#due-date').focus()
         return false;
     }
     taskManager.addTask(name,description,assignedTo,dueDate,$('.create-button').html()=="UPDATE"?"UPDATED":"TODO")
@@ -81,4 +85,7 @@ tasksList.addEventListener('click',(event) => {
             setTimeout(()=>{$('#update-alert').hide()},3000)
         }
     }
+})
+document.addEventListener('keyup',(e)=>{
+    if (e.keyCode===13)$('.create-button').click()
 })
