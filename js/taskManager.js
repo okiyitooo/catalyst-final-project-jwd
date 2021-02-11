@@ -8,8 +8,9 @@ const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
                         <span class="task-title">${name}</span></div>
                       <div><span class="badge badge-pill ${color} task-status">${status}</span></div>
                     </div>
-                    <div class="task-desc">
-                      <p class="edit">${description}</p>
+                    <div class="task-desc position-relative">
+                      <p>${description}</p>
+                      <div style="position: absolute; bottom: 0; right: 10px" class="edit text-primary">edit</div>
                     </div>
                     <div class="task-bottom">
                       <div><span class="task-assign">Assigned to: ${assignedTo}</span>
@@ -44,7 +45,7 @@ class TaskManager {
         })
         this._currentId++;
     }
-    render() {
+    render(selector='#tasks') {
         const tasksHtmlList = []
         this.tasks.forEach((e,i)=>{
             e.id=i
@@ -54,7 +55,7 @@ class TaskManager {
             tasksHtmlList.push(taskHtml);
         })
         const tasksHtml = tasksHtmlList.join("\n");
-        $('#tasks').html(tasksHtml)
+        $(selector).html(tasksHtml)
     }
     getTaskById(taskId) {
         let foundTask;
@@ -68,8 +69,15 @@ class TaskManager {
     }
     save() {
         const tasksJson = JSON.stringify(this.tasks)
-        localStorage.setItem('tasks',tasksJson)
-        localStorage.setItem('currentID',JSON.stringify(this._currentId))
+        localStorage.setItem('tasks',tasksJson); localStorage.setItem('currentID',JSON.stringify(this._currentId))
+        const stateOfInputs = {
+            name: $('#task-name').val(),
+            description: $('#description').val(),
+            assigned: $('#assigned-to').val(),
+            due: $('#due-date').val(),
+            button: $(".create-button").html()
+        }
+        localStorage.setItem('inputs',JSON.stringify(stateOfInputs))
     }
     load() {
         if (localStorage.getItem('tasks') !== null){
@@ -79,6 +87,12 @@ class TaskManager {
         if (localStorage.getItem("currentID") !== null){
             this._currentId = +localStorage.getItem('currentID')
         }
+        const inputs = JSON.parse(localStorage.getItem('inputs'))
+        $('#task-name').val(inputs.name)
+        $('#description').val(inputs.description)
+        $('#assigned-to').val(inputs.assigned)
+        $('#due-date').val(inputs.due)
+        $('.create-button').html(inputs.button)
     }
     deleteTask (taskId) {
 //        const newTasks = [] 

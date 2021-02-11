@@ -76,7 +76,7 @@
                     <!-- Form Column -->
                     <div class="col-12 col-md-6 main-form">
                         <h2>New Task</h2>
-                        <form>
+                        <form onchange=taskManager.save()>
                             <div class="form-group">
                                 <label for="task-name">Task Name</label>
                                 <input type="text" class="form-control" id="task-name" autocomplete="off" >

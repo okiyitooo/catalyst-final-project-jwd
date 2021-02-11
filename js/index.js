@@ -31,14 +31,14 @@ const validFormFieldInput = () => {
         return false;
     }
     taskManager.addTask(name,description,assignedTo,dueDate,$('.create-button').html()=="UPDATE"?"UPDATED":"TODO")
-    $('.create-button').css('background-color',"#ffc107")
+    $('.create-button').removeClass('btn-primary').addClass('btn-warning')
     $(".create-button").html("Create")
-    taskManager.save()
-    taskManager.render()
     newTaskNameInput.value = ""
     newDescriptionInput.value = ""
     newAssignedToInput.value = ""
     newDueDateInput.value = ""
+    taskManager.save()
+    taskManager.render()
 }
 const tasksList = document.querySelector('#tasks');
 tasksList.addEventListener('click',(event) => {
@@ -70,7 +70,7 @@ tasksList.addEventListener('click',(event) => {
         $('#assigned-to').val(task.assignedTo)
         $('#due-date').val(task.dueDate)
         $(".create-button").html("UPDATE")
-        $(".create-button").css('background-color','skyblue')
+        $(".create-button").removeClass('btn-warning').addClass('btn-primary')
 //        task.status = "UPDATED"
         console.log(task)
         taskManager.deleteTask(taskId)
