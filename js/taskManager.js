@@ -2,7 +2,7 @@ const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
     const display = status == "TODO" || status == "UPDATED" ? "" : "d-none";   
     const color = status == "TODO" ? "badge-warning": status == "UPDATED" ? "badge-primary" : "badge-success"
     const html = `<li class="list-group-item">
-                  <div class="task" data-task-id=${id}>
+                  <div class="animate__animated animate__bounce task" data-task-id=${id}>
                     <div class="task-top">
                       <div>
                         <span class="task-title">${name}</span></div>
@@ -89,12 +89,14 @@ class TaskManager {
             this._currentId = +localStorage.getItem('currentID')
         }
         const inputs = JSON.parse(localStorage.getItem('inputs'))
-        $('#task-name').val(inputs.name)
-        $('#description').val(inputs.description)
-        $('#assigned-to').val(inputs.assigned)
-        $('#due-date').val(inputs.due)
-        $('.create-button').html(inputs.button)
-        document.querySelector('.create-button').classList = inputs.btnClasses
+        if (inputs) {
+          $('#task-name').val(inputs.name)
+          $('#description').val(inputs.description)
+          $('#assigned-to').val(inputs.assigned)
+          $('#due-date').val(inputs.due)
+          $('.create-button').html(inputs.button)
+          document.querySelector('.create-button').classList = inputs.btnClasses
+        }
     }
     deleteTask (taskId) {
 //        const newTasks = [] 
