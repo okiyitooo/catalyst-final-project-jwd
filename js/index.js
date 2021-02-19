@@ -76,7 +76,7 @@ tasksList.addEventListener('click',(event) => {
         $(".create-button").html("UPDATE")
         $(".create-button").removeClass('btn-warning').addClass('btn-primary')
 //        task.status = "UPDATED"
-        console.log(task)
+//        console.log(task)
         taskManager.deleteTask(taskId)
         taskManager.save()
         taskManager.render()

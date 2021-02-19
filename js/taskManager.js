@@ -75,7 +75,8 @@ class TaskManager {
             description: $('#description').val(),
             assigned: $('#assigned-to').val(),
             due: $('#due-date').val(),
-            button: $(".create-button").html()
+            button: $(".create-button").html(),
+            btnClasses: document.querySelector('.create-button').classList.value
         }
         localStorage.setItem('inputs',JSON.stringify(stateOfInputs))
     }
@@ -93,6 +94,7 @@ class TaskManager {
         $('#assigned-to').val(inputs.assigned)
         $('#due-date').val(inputs.due)
         $('.create-button').html(inputs.button)
+        document.querySelector('.create-button').classList = inputs.btnClasses
     }
     deleteTask (taskId) {
 //        const newTasks = [] 
