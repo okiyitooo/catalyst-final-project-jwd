@@ -1,6 +1,6 @@
 const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
     const display = status == "TODO" || status == "UPDATED" ? "" : "d-none";   
-    const color = status == "TODO" ? "badge-warning": status == "UPDATED" ? "badge-primary" : "badge-success"
+    const color = dueDate==="OVERDUE" && status === "TODO" ? "badge-danger" : status == "TODO" ? "badge-warning": status == "UPDATED" ? "badge-primary" : "badge-success"
     const html = `<li class="list-group-item">
                   <div class="animate__animated animate__bounce task" data-task-id=${id}>
                     <div class="task-top">
@@ -21,7 +21,7 @@ const createTaskHtml = (name,description,assignedTo,dueDate,status,id) => {
                       <div>
                         <span class="btn badge badge-danger delete-button">Delete</span>
                       </div>
-                      <div><span class="task-date">Due on ${dueDate}</span>
+                      <div><span class="task-date ${dueDate==="OVERDUE"?"text-light badge badge-danger":""}">${dueDate==="OVERDUE"? dueDate:"Due on " + dueDate}</span>
                       </div>
                     </div>
                   </div>
@@ -50,7 +50,12 @@ class TaskManager {
         this.tasks.forEach((e,i)=>{
             e.id=i
             const date = new Date(e.dueDate);
-            const formattedDate = date.toDateString();
+            let formattedDate;
+            if (date > new Date()){
+              formattedDate = date.toDateString();
+            } else {
+              formattedDate = "OVERDUE";
+            }
             const taskHtml = createTaskHtml(e.name,e.description,e.assignedTo,formattedDate,e.status,i);
             tasksHtmlList.push(taskHtml);
         })
