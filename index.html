@@ -76,7 +76,7 @@
                     <!-- Form Column -->
                     <div class="col-12 col-md-6 main-form">
                         <h2>New Task</h2>
-                        <form onchange=taskManager.save()>
+                        <form onchange=taskManager.save() onsubmit="validFormFieldInput(); return false;">
                             <div class="form-group">
                                 <label for="task-name">Task Name</label>
                                 <input type="text" class="form-control" id="task-name" autocomplete="off" >
@@ -111,13 +111,14 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="d" style="color:white;">.</label>
-                                        <p><button onclick="validFormFieldInput();  return false;" type="button" class="btn btn-warning btn-block mb-2 create-button">Create</button>
+                                        <p><button type="button" onclick="validFormFieldInput()" class="btn btn-warning btn-block mb-2 create-button">Create</button>
                                         <div id="update-alert" class="alert alert-danger" role="alert" style="display: none">
                                             You must first update this task
                                         </div></p>
                                     </div>
                                 </div>
                             </div>
+                            <button type="submit" class="d-none"></button>
                         </form>
                     </div>
                     <!-- Task Column -->

@@ -86,6 +86,3 @@ tasksList.addEventListener('click',(event) => {
         }
     }
 })
-document.addEventListener('keyup',(e)=>{
-    if (e.keyCode===13)$('.create-button').click()
-})
